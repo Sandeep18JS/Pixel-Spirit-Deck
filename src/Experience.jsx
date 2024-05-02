@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import vertexShader from './shaders/vertex.glsl?raw'
-import fragmentShader from './shaders/pixelspiritdecks/01justice.glsl'
+import fragmentShader from './shaders/pixelspiritdecks/03death.glsl'
 import * as THREE from 'three'
 import { useFrame } from '@react-three/fiber'
 import { OrbitControls, shaderMaterial } from '@react-three/drei'
