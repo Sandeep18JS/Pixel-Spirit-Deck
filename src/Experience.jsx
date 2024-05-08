@@ -3,7 +3,7 @@ import vertexShader from './shaders/vertex.glsl?raw'
 import fragmentShader from './shaders/pixelspiritdecks/10themperor.glsl'
 import * as THREE from 'three'
 import { useFrame } from '@react-three/fiber'
-import { OrbitControls, shaderMaterial } from '@react-three/drei'
+import { Edges, OrbitControls, shaderMaterial } from '@react-three/drei'
 import { extend } from '@react-three/fiber'
 
 const GradientMaterial = shaderMaterial(
@@ -26,9 +26,14 @@ export const Experience = () => {
     return (
         <>
             <OrbitControls />
+
             <mesh ref={mesh}>
                 <planeGeometry args={[8, 8]} />
+
                 <gradientMaterial key={GradientMaterial.key} u_time={uTime} />
+                <Edges linewidth={2}
+
+                />
             </mesh>
         </>
     )
